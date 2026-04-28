@@ -1,0 +1,61 @@
+@font-face {
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400 700;
+  font-family: 'Raleway';
+  src: url(./assets/fonts/Raleway-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400 700;
+  font-family: 'Raleway';
+  src: url(./assets/fonts/Raleway-Italic-VariableFont_wght.ttf) format('truetype');
+}
+:root {
+  --white: hsl(0, 0%, 100%);
+  --primary: hsl(228, 56%, 26%);
+  --primary-gray: hsl(229, 7%, 55%);
+  --primary-dark: hsl(229, 57%, 11%);
+  --primary-light: hsl(243, 100%, 93%);
+  --mobile-bg: url(./assets/images/bg-mobile.png);
+  --desktop-bg: url(./assets/images/bg-desktop.png);
+  --progress-gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+}
+@layer reset {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  h1, h2, p {
+    margin: 0;
+  }
+  h1, h2 {
+    font-weight: 700;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+@layer base {
+  html {
+    line-height: 1.2;
+    font-family: 'Raleway', sans-serif;
+  }
+  body {
+    background-color: var(--primary-dark);
+  }
+}
+@layer layout {
+  main {
+    
+  }
+  .attribution {
+    font-size: 0.6875rem;
+    text-align: center;
+    color: var(--primary-light);
+  }
+  .attribution a {
+    color: var(--white);
+  }
+}
